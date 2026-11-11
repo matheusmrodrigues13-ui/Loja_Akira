@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Akira</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: linear-gradient(145deg, #ffffff, #e8efff);
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+            border-top: 5px solid #2563eb;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #1e293b;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .menu a {
+            display: block;
+            padding: 14px 18px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.25);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Loja Akira</h1>
+        <p>Escolha uma opção abaixo:</p>
+
+        <div class="menu">
+            <a href="cadastro.php">Cadastrar produto</a>
+            <a href="listar.php">Listar produtos</a>
+        </div>
+    </div>
+</body>
+</html>
